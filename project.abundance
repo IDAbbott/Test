@@ -62,7 +62,12 @@
                     "x": 0.2672727272727273,
                     "y": 0.47145877378435513,
                     "uniqueID": 1745723284158,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1745785709803
+                        }
+                    ],
                     "description": "Changes the color of the shape.",
                     "selectedColorIndex": 22
                 },
@@ -79,7 +84,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 10
+                            "ioValue": 0
                         },
                         {
                             "name": "yDist",
@@ -87,7 +92,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": -1
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -95,8 +100,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.5009090909090909,
-                    "y": 0.321353065539112,
+                    "x": 0.5863636363636364,
+                    "y": 0.3446088794926004,
                     "uniqueID": 1745723415686,
                     "ioValues": [
                         {
@@ -105,7 +110,7 @@
                         },
                         {
                             "name": "Shape 2",
-                            "ioValue": 1745723316436
+                            "ioValue": 1745785960615
                         },
                         {
                             "name": "Shape 3",
@@ -117,8 +122,8 @@
                 {
                     "atomType": "Export",
                     "name": "Export",
-                    "x": 0.5818181818181818,
-                    "y": 0.492600422832981,
+                    "x": 0.81,
+                    "y": 0.6765327695560254,
                     "uniqueID": 1745723515433,
                     "ioValues": [
                         {
@@ -147,13 +152,13 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.33999999999999997,
-                    "y": 0.6067653276955602,
+                    "x": 0.3527272727272727,
+                    "y": 0.843551797040169,
                     "uniqueID": 1745723689578,
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1745723284158
+                            "ioValue": ""
                         },
                         {
                             "name": "xDist",
@@ -173,7 +178,7 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.6827272727272727,
+                    "x": 0.7281818181818182,
                     "y": 0.33403805496828753,
                     "uniqueID": 1745785299206,
                     "ioValues": [
@@ -211,10 +216,28 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 10
+                            "ioValue": 12
                         }
                     ],
                     "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.42727272727272725,
+                    "y": 0.4312896405919661,
+                    "uniqueID": 1745785960615,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1745723316436
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 90
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
                 }
             ],
             "allConnectors": [
@@ -236,15 +259,8 @@
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
-                    "ap1ID": 1745723284158,
-                    "ap2ID": 1745723689578
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "Shape 2",
-                    "ap2Primary": false,
                     "ap1ID": 1745723316436,
-                    "ap2ID": 1745723415686
+                    "ap2ID": 1745785960615
                 },
                 {
                     "ap1Name": "geometry",
@@ -280,6 +296,20 @@
                     "ap2Primary": true,
                     "ap1ID": 1745785526152,
                     "ap2ID": 1745723276196
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1745785709803,
+                    "ap2ID": 1745723284158
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 1745785960615,
+                    "ap2ID": 1745723415686
                 }
             ],
             "fileTypeVersion": 1,
