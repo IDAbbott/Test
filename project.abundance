@@ -19,7 +19,7 @@
         },
         {
             "atomType": "Molecule",
-            "name": "Rectangle1",
+            "name": "InnerPost1",
             "x": 0.13727272727272727,
             "y": 0.25792811839323465,
             "uniqueID": 1745723145431,
@@ -42,42 +42,6 @@
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
-                    "atomType": "Rectangle",
-                    "name": "Rectangle",
-                    "x": 0.14454545454545453,
-                    "y": 0.266384778012685,
-                    "uniqueID": 1745723214495,
-                    "ioValues": [
-                        {
-                            "name": "x length",
-                            "ioValue": 20
-                        },
-                        {
-                            "name": "y length",
-                            "ioValue": 50
-                        }
-                    ],
-                    "description": "Creates a new rectangle."
-                },
-                {
-                    "atomType": "Rectangle",
-                    "name": "Rectangle",
-                    "x": 0.13818181818181818,
-                    "y": 0.5200845665961945,
-                    "uniqueID": 1745723245741,
-                    "ioValues": [
-                        {
-                            "name": "x length",
-                            "ioValue": 5
-                        },
-                        {
-                            "name": "y length",
-                            "ioValue": 10
-                        }
-                    ],
-                    "description": "Creates a new rectangle."
-                },
-                {
                     "atomType": "Color",
                     "name": "Color",
                     "x": 0.26636363636363636,
@@ -86,7 +50,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1745723214495
+                            "ioValue": 1745785526152
                         }
                     ],
                     "description": "Changes the color of the shape.",
@@ -98,12 +62,7 @@
                     "x": 0.2672727272727273,
                     "y": 0.47145877378435513,
                     "uniqueID": 1745723284158,
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": 1745723245741
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Changes the color of the shape.",
                     "selectedColorIndex": 22
                 },
@@ -228,23 +187,37 @@
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.14272727272727273,
+                    "y": 0.2558139534883721,
+                    "uniqueID": 1745785526152,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 28.9
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.1390909090909091,
+                    "y": 0.47568710359408034,
+                    "uniqueID": 1745785709803,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new circle."
                 }
             ],
             "allConnectors": [
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 1745723214495,
-                    "ap2ID": 1745723276196
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 1745723245741,
-                    "ap2ID": 1745723284158
-                },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
@@ -300,10 +273,17 @@
                     "ap2Primary": false,
                     "ap1ID": 1745785299206,
                     "ap2ID": 1745723515433
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1745785526152,
+                    "ap2ID": 1745723276196
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         }
     ],
     "allConnectors": [],
