@@ -11,8 +11,8 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
+            "x": 0.9746001881467544,
+            "y": 0.5043668122270742,
             "uniqueID": 1745723132522,
             "ioValues": [
                 {
@@ -31,7 +31,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 40
+                    "ioValue": 48
                 }
             ],
             "description": "Creates a new circle."
@@ -86,13 +86,13 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.13076199435559735,
-            "y": 0.7882096069868995,
+            "x": 0.12699905926622765,
+            "y": 0.7620087336244541,
             "uniqueID": 1746587538613,
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 44
+                    "ioValue": 53
                 }
             ],
             "description": "Creates a new circle."
@@ -207,7 +207,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 42
+                    "ioValue": 50
                 }
             ],
             "description": "Creates a new circle."
@@ -277,7 +277,7 @@
             "atomType": "Assembly",
             "name": "Assembly",
             "x": 0.5126999059266227,
-            "y": 0.4934497816593887,
+            "y": 0.49781659388646293,
             "uniqueID": 1746588358535,
             "ioValues": [
                 {
@@ -294,6 +294,36 @@
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.5606773283160865,
+            "y": 0.7161572052401747,
+            "uniqueID": 1746588747837,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1746588358535
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "VacuumCon"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "STEP"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": "STEP",
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "VacuumCon"
         }
     ],
     "allConnectors": [
@@ -387,6 +417,13 @@
             "ap2Primary": false,
             "ap1ID": 1746588358535,
             "ap2ID": 1745723132522
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1746588358535,
+            "ap2ID": 1746588747837
         }
     ],
     "unitsKey": "MM",
