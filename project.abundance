@@ -67,13 +67,13 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.13264346190028223,
-            "y": 0.5021834061135371,
+            "x": 0.11288805268109126,
+            "y": 0.4541484716157205,
             "uniqueID": 1746587534606,
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 54
+                    "ioValue": 56
                 }
             ],
             "description": "Creates a new circle."
@@ -81,8 +81,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.13358419567262467,
-            "y": 0.8296943231441049,
+            "x": 0.13076199435559735,
+            "y": 0.7882096069868995,
             "uniqueID": 1746587538613,
             "ioValues": [
                 {
@@ -91,42 +91,6 @@
                 }
             ],
             "description": "Creates a new circle."
-        },
-        {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.3932267168391345,
-            "y": 0.4585152838427948,
-            "uniqueID": 1746587549692,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": ""
-                },
-                {
-                    "name": "height",
-                    "ioValue": 50
-                }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
-        },
-        {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.2831608654750706,
-            "y": 0.8449781659388647,
-            "uniqueID": 1746587557713,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1746587538613
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
         },
         {
             "atomType": "Loft",
@@ -140,7 +104,11 @@
                     "ioValue": 1746587534606
                 },
                 {
-                    "name": "Shape 2",
+                    "name": "Shape 3",
+                    "ioValue": 1746588057951
+                },
+                {
+                    "name": "Shape 4",
                     "ioValue": ""
                 },
                 {
@@ -148,7 +116,11 @@
                     "ioValue": 1746587534606
                 },
                 {
-                    "name": "Shape 2",
+                    "name": "Shape 3",
+                    "ioValue": 1746588057951
+                },
+                {
+                    "name": "Shape 4",
                     "ioValue": ""
                 }
             ],
@@ -158,16 +130,135 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.2605832549388523,
-            "y": 0.5305676855895196,
+            "x": 0.13076199435559735,
+            "y": 0.6244541484716157,
             "uniqueID": 1746587929533,
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 56
+                    "ioValue": 54
                 }
             ],
             "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.21072436500470365,
+            "y": 0.6026200873362445,
+            "uniqueID": 1746588057951,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1746587929533
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 50
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.39887111947318904,
+            "y": 0.44541484716157204,
+            "uniqueID": 1746588148655,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1746587921115
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 50
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.12982126058325494,
+            "y": 0.9323144104803492,
+            "uniqueID": 1746588211467,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.22013170272812796,
+            "y": 0.777292576419214,
+            "uniqueID": 1746588231395,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1746587538613
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 50
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Loft",
+            "name": "Loft",
+            "x": 0.31702728127939794,
+            "y": 0.7510917030567686,
+            "uniqueID": 1746588254193,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1746588231395
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": ""
+                },
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1746588231395
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
+            "closedSelection": 0
         }
     ],
     "allConnectors": [
@@ -197,7 +288,36 @@
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 1746587538613,
-            "ap2ID": 1746587557713
+            "ap2ID": 1746588231395
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1746587921115,
+            "ap2ID": 1746588148655
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1746587929533,
+            "ap2ID": 1746588057951
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": 1746588057951,
+            "ap2ID": 1746587921115
+        },
+        null,
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1746588231395,
+            "ap2ID": 1746588254193
         }
     ],
     "unitsKey": "MM",
