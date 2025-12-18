@@ -432,6 +432,33 @@
         },
         {
           "name": "Shape 4",
+          "ioValue": {
+            "geometry": "move-polysides-30-3-0-50-0",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 5",
           "ioValue": null
         }
       ]
@@ -450,17 +477,18 @@
     },
     {
       "atomType": "RegularPolygon",
-      "x": 0.5972850678733032,
-      "y": 0.49052631578947364,
+      "x": 0.5990950226244344,
+      "y": 0.4631578947368421,
       "uniqueID": "id-75",
       "ioValues": [
         {
           "name": "number of sides",
-          "ioValue": 6
+          "ioValue": 3,
+          "currentEquation": "3"
         },
         {
           "name": "diameter",
-          "ioValue": 10
+          "ioValue": 60
         }
       ]
     },
@@ -472,11 +500,12 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 0
+          "ioValue": 0,
+          "currentEquation": "0"
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": 50
         },
         {
           "name": "zDist",
@@ -580,6 +609,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-75",
       "ap2ID": "id-79"
+    },
+    {
+      "ap2Name": "Shape 4",
+      "ap1ID": "id-79",
+      "ap2ID": "id-65"
     }
   ],
   "unitsKey": "MM",
