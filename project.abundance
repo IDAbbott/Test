@@ -339,8 +339,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         },
         {
           "name": "y length",
@@ -360,8 +359,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "zDist",
@@ -483,8 +481,7 @@
       "ioValues": [
         {
           "name": "number of sides",
-          "ioValue": 3,
-          "currentEquation": "3"
+          "ioValue": 3
         },
         {
           "name": "diameter",
@@ -500,8 +497,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "yDist",
@@ -512,6 +508,85 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.5086285195277022,
+      "y": 0.8799999999999999,
+      "uniqueID": "id-154",
+      "name": "x + y",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 1,
+          "currentEquation": "1"
+        },
+        {
+          "name": "y",
+          "ioValue": 5
+        }
+      ],
+      "currentEquation": "x + y"
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.6530426884650318,
+      "y": 0.86,
+      "uniqueID": "id-158",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-160"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.5586285195277022,
+          "y": 0.8299999999999998,
+          "uniqueID": "id-166",
+          "name": "x + y",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 1
+            },
+            {
+              "name": "y",
+              "ioValue": 5
+            }
+          ],
+          "currentEquation": "x + y"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-166",
+          "ap2ID": "id-160"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.5,
+      "y": 0.5,
+      "uniqueID": "id-162",
+      "name": "x + y",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 1
+        },
+        {
+          "name": "y",
+          "ioValue": 1
+        }
+      ],
+      "currentEquation": "x + y"
     }
   ],
   "allConnectors": [
@@ -601,11 +676,6 @@
       "ap2ID": "id-71"
     },
     {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-71",
-      "ap2ID": 1745723132522
-    },
-    {
       "ap2Name": "geometry",
       "ap1ID": "id-75",
       "ap2ID": "id-79"
@@ -614,6 +684,11 @@
       "ap2Name": "Shape 4",
       "ap1ID": "id-79",
       "ap2ID": "id-65"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-79",
+      "ap2ID": 1745723132522
     }
   ],
   "unitsKey": "MM",
