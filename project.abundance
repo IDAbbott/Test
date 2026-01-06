@@ -31,13 +31,7 @@
       "SVGwidth": 10
     }
   ],
-  "allConnectors": [
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-255",
-      "ap2ID": 1745723132522
-    }
-  ],
+  "allConnectors": [],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
