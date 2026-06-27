@@ -26,12 +26,125 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 10
+          "ioValue": 100
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.31662468513853903,
+      "y": 0.47764705882352937,
+      "uniqueID": "id-272",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 100
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.3971452560873216,
+      "y": 0.6752941176470588,
+      "uniqueID": "id-276",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 50
+        },
+        {
+          "name": "zDist",
+          "ioValue": 50
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.3240973971452561,
+      "y": 0.7952941176470588,
+      "uniqueID": "id-282",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 90
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Intersection",
+      "x": 0.5491183879093199,
+      "y": 0.6329411764705882,
+      "uniqueID": "id-288",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-267",
+      "ap2ID": "id-272"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-272",
+      "ap2ID": "id-288"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-272",
+      "ap2ID": "id-282"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-276",
+      "ap2ID": "id-288"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-282",
+      "ap2ID": "id-276"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-288",
+      "ap2ID": "id-268"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
