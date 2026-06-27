@@ -32,8 +32,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.31662468513853903,
-      "y": 0.47764705882352937,
+      "x": 0.3224181360201511,
+      "y": 0.4658823529411764,
       "uniqueID": "id-272",
       "ioValues": [
         {
@@ -48,8 +48,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.3971452560873216,
-      "y": 0.6752941176470588,
+      "x": 0.45004198152812763,
+      "y": 0.771764705882353,
       "uniqueID": "id-276",
       "ioValues": [
         {
@@ -63,11 +63,12 @@
         },
         {
           "name": "yDist",
-          "ioValue": 50
+          "ioValue": 0
         },
         {
           "name": "zDist",
-          "ioValue": 50
+          "ioValue": 0,
+          "currentEquation": "0"
         }
       ]
     },
@@ -111,6 +112,34 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.17212426532325778,
+      "y": 0.7105882352941176,
+      "uniqueID": "id-292",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 40
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.2721242653232578,
+      "y": 0.7105882352941176,
+      "uniqueID": "id-295",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 100
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -123,11 +152,6 @@
       "ap2Name": "geometry1",
       "ap1ID": "id-272",
       "ap2ID": "id-288"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-272",
-      "ap2ID": "id-282"
     },
     {
       "ap2Name": "geometry2",
@@ -143,6 +167,16 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-288",
       "ap2ID": "id-268"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-292",
+      "ap2ID": "id-295"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-295",
+      "ap2ID": "id-282"
     }
   ],
   "unitsKey": "MM",
