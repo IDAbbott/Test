@@ -8,9 +8,9 @@
   "allAtoms": [
     {
       "atomType": "Output",
-      "x": 0.9746001881467544,
-      "y": 0.5043668122270742,
-      "uniqueID": 1745723132522,
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-268",
       "ioValues": [
         {
           "name": "number or geometry",
@@ -19,16 +19,16 @@
       ]
     },
     {
-      "atomType": "Import",
-      "x": 0.26019080659150046,
-      "y": 0.4873417721518987,
-      "uniqueID": "id-255",
-      "fileName": "M4_IA_Clamp3.stl",
-      "name": "Import",
-      "type": "STL",
-      "repoOwner": "IDAbbott",
-      "repoName": "Test",
-      "SVGwidth": 10
+      "atomType": "Circle",
+      "x": 0.21662468513853902,
+      "y": 0.47764705882352937,
+      "uniqueID": "id-267",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
     }
   ],
   "allConnectors": [],
