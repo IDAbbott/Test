@@ -26,7 +26,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 14
+          "ioValue": 140
         }
       ]
     },
@@ -160,11 +160,12 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10
+          "ioValue": 20,
+          "currentEquation": "20"
         },
         {
           "name": "y length",
-          "ioValue": 10
+          "ioValue": 50
         }
       ]
     },
@@ -207,6 +208,36 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.7355163727959698,
+      "y": 0.6517647058823529,
+      "uniqueID": "id-381",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Test",
+          "currentEquation": "Test"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Test"
     }
   ],
   "allConnectors": [
@@ -249,6 +280,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-360",
       "ap2ID": "id-268"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-360",
+      "ap2ID": "id-381"
     },
     {
       "ap2Name": "geometry",
