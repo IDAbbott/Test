@@ -54,7 +54,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 10.5
+          "ioValue": 102
         }
       ]
     },
@@ -107,19 +107,19 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 210
+          "ioValue": 170
         },
         {
           "name": "y length",
-          "ioValue": 2,
-          "currentEquation": "2"
+          "ioValue": 3,
+          "currentEquation": "3"
         }
       ]
     },
     {
       "atomType": "Extrude",
-      "x": 0.2695214105793451,
-      "y": 0.6235294117647059,
+      "x": 0.2720403022670025,
+      "y": 0.6047058823529412,
       "uniqueID": "id-356",
       "ioValues": [
         {
@@ -128,7 +128,7 @@
         },
         {
           "name": "height",
-          "ioValue": 2
+          "ioValue": 3
         }
       ]
     },
@@ -238,6 +238,32 @@
       "resolution": 96,
       "importIndex": 0,
       "partName": "Test"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.3711167086481948,
+      "y": 0.5882352941176471,
+      "uniqueID": "id-386",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 40,
+          "currentEquation": "40"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -272,9 +298,9 @@
       "ap2ID": "id-356"
     },
     {
-      "ap2Name": "Shape 2",
+      "ap2Name": "geometry",
       "ap1ID": "id-356",
-      "ap2ID": "id-360"
+      "ap2ID": "id-386"
     },
     {
       "ap2Name": "number or geometry",
@@ -299,6 +325,11 @@
     {
       "ap2Name": "Shape 3",
       "ap1ID": "id-373",
+      "ap2ID": "id-360"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-386",
       "ap2ID": "id-360"
     }
   ],
