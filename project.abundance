@@ -145,6 +145,10 @@
         {
           "name": "Shape 2",
           "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
         }
       ]
     },
@@ -192,7 +196,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0
+          "ioValue": 110
         },
         {
           "name": "yDist",
@@ -256,7 +260,11 @@
       "ap1ID": "id-369",
       "ap2ID": "id-373"
     },
-    null
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-373",
+      "ap2ID": "id-360"
+    }
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
